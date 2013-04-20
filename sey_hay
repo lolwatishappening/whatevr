@@ -1,0 +1,18 @@
+import random
+
+def sey_hay(greetings):
+    """(List of greetings) -> NoneType
+    Greet the user from a list of greetings
+    Then make the user respond
+    Repeat
+
+    the infinite cycle cannot be ignored
+    """
+    
+    greeting = greetings[random.randint(1, len(greetings) - 1)]
+    print(greeting)
+    
+
+if __name__ == "__main__":
+    sey_hay(['hi', 'HeLl0', 'We r all beautiful', 'Argh'])
+
